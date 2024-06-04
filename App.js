@@ -5,6 +5,8 @@
  *          <h1>Hello World</h1>
  *      </div>
  * </div>
+ * 
+ * ReactElement(Object) => HTML(Browser Understands)
  */
 
 const parent = React.createElement("div", { id: "parent" }, [
@@ -25,7 +27,6 @@ const parent = React.createElement("div", { id: "parent" }, [
 // );
 
 console.log(parent); //object
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(parent);
